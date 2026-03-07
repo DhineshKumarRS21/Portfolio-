@@ -28,12 +28,11 @@
         </div>
 
     </nav>
-</div>
+  </div>
   <!-- Home -->
    <section id="home">
     <div class="me">
       <div class="about">
-        <!-- <div class="circle c1"> </div> -->
         <div class="circle c2"> </div>
         <div class="circle c3"> </div>
         <div class="circle c4"> </div>
@@ -203,7 +202,7 @@
 
   </div>
   </div>
-</section>
+  </section>
   <!-- Certification -->
 
   <section id="certifications">
@@ -406,7 +405,7 @@
         <img src="LinkedIn icon.png" alt="not loaded" class="logo ll">
         <div class="ttt lctitle">Linkedin</div>
         <div class="id linkedid">
-          <a href="www.linkedin.com/in/dhinesh-kumar-r-s-11472a321" class="linkkk">Dhinesh Kumar R S</a>
+          <a href="https://www.linkedin.com/in/dhinesh-kumar-r-s-11472a321/" class="linkkk">Dhinesh Kumar R S</a>
         </div>
       </div>
       <div class="github">
@@ -417,25 +416,29 @@
         </div>
       </div>
     </div> 
-    <div class="formpt">
+    <div class="formpt" id="form">
       <form>
         <div class="inp">
           <label class="labels">Full Name</label>
-          <input type="text" name="name" required placeholder="Enter full name">
+          <input type="text" name="name" id="nameid" placeholder="Enter full name">
+          <div class="error"></div>
         </div>
         <div class="inp">
           <label class="labels">Email</label>
-          <input type="email" name="email" placeholder="Mail ID(@gmail.com)" required>
+          <input type="email" id="emailid" name="email" placeholder="Mail ID(@gmail.com)" >
+          <div class="error"></div>
         </div>
         <div class="inp">
           <label class="labels">Subject</label>
-          <input type="text" name="subject" placeholder="What's this about">
+          <input type="text" name="subject" id="subjectid" placeholder="What's this about">
+          <div class="error"></div>
         </div>
         <div class="inp">
           <label class="labels">Message</label>
-          <textarea name="message" rows="5" required placeholder="Type your message"></textarea>
+          <textarea name="message" rows="5" id="messageid" placeholder="Type your message"></textarea>
+          <div class="error"></div>
         </div>
-        <button type="submit" class="bt fbt" >Send Message</button>
+        <button type="submit" class="bt fbt" id="submitid">Send Message</button>
       </form>
     </div> 
   </div>
@@ -443,6 +446,7 @@
   <!-- Copyright -->
    <footer class="footer">
   <p>© 2026 Dhinesh Kumar R S. All Rights Reserved.</p>
-</footer>
+  </footer>
+  <script src="portfolio.js"></script>
 </body>
 </html>
